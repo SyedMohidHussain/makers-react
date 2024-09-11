@@ -1,7 +1,13 @@
 import React from "react";
-const FileUpload = () => {
+import { cn } from "@/lib/utils";
+const FileUpload = ({ className }) => {
   return (
-    <div className="flex px-[14px] py-[25px] border border-[#E4E4E7] shadow-sm rounded-md">
+    <div
+      className={cn(
+        "flex border border-[#E4E4E7] shadow-sm rounded-md",
+        className
+      )}
+    >
       <label
         htmlFor="file-upload"
         className="flex  w-full h-full cursor-pointer"

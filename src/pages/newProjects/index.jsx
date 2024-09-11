@@ -27,7 +27,7 @@ export default function NewProjects() {
   };
 
   return (
-    <div className="px-[32px] py-[65px] bg-[#F6F6F6]">
+    <div className="px-[32px] py-[65px] bg-[#F6F6F6] min-h-screen">
       <Dialog open={showAlert}>
         <DialogContent>
           <DialogHeader>
