@@ -1,40 +1,6 @@
-import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogTitle,
-  DialogDescription,
-} from "@/components/ui/dialog";
-import NewProjects from "pages/newProjects";
-import ExistingProjects from "pages/existingProjects";
-import FactoryProfile from "pages/profile";
-import HomeProjects from "pages/homeProjects";
 import ProfileEdit from "pages/profileEdit";
-import AdminHeader from "component/adminHeader";
+import Settings from "pages/settings";
 function App() {
-  const [isDialogOpen, setIsDialogOpen] = useState(true);
-  const [selectedComponent, setSelectedComponent] = useState(null);
-
-  useEffect(() => {
-    setIsDialogOpen(true);
-  }, []);
-
-  const renderSelectedComponent = () => {
-    switch (selectedComponent) {
-      case "newProjects":
-        return <NewProjects />;
-      case "existingProjects":
-        return <ExistingProjects />;
-      case "factoryProfile":
-        return <FactoryProfile />;
-      case "homeProjects":
-        return <HomeProjects />;
-      default:
-        return null;
-    }
-  };
-
   return (
     // <div className="h-full">
     //   <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
@@ -83,7 +49,8 @@ function App() {
     //   {/* Render the selected component */}
     //   {renderSelectedComponent()}
     // </div>
-    <ProfileEdit />
+    // <ProfileEdit />
+    <Settings/>
   );
 }
 

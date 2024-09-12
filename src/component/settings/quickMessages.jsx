@@ -198,14 +198,14 @@ export default function QuickMessages() {
       {showTabel && (
         <Table className="border border-[#E4E4E7] mt-5">
           <TableHeader>
-            <TableRow>
-              <TableHead className="text-sm  text-[#71717A]" colSpan={1}>
+            <TableRow >
+              <TableHead className="text-sm  text-[#71717A]" >
                 Message Tile
               </TableHead>
-              <TableHead className="text-sm  text-[#71717A]" colSpan={3}>
+              <TableHead className="text-sm  text-[#71717A]">
                 Message Description
               </TableHead>
-              <TableHead className="text-sm w-[100px] text-[#71717A]" colSpan={1}></TableHead>
+              <TableHead className="text-sm w-[100px] text-[#71717A]" ></TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -217,7 +217,7 @@ export default function QuickMessages() {
                 <TableCell className="text-sm font-normal text-[#09090B]">
                   {item.description}
                 </TableCell>
-                <TableCell className="text-sm font-normal text-[#09090B]">
+                <TableCell className="text-sm font-normal text-[#09090B] text-center">
                   <Popover>
                     <PopoverTrigger>...</PopoverTrigger>
                     <PopoverContent className="w-fit">
